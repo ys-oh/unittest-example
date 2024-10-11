@@ -16,5 +16,6 @@ if (NOT GTest_FOUND)
 endif()
 
 add_library(unittest_interface INTERFACE)
-target_link_libraries(unittest_interface INTERFACE GTest::GTest GTest::Main)
+# target_link_libraries(unittest_interface INTERFACE GTest::GTest GTest::Main)
+target_link_libraries(unittest_interface INTERFACE gtest gtest_main)
 
